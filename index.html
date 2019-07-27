@@ -10,42 +10,57 @@
     <body>
         <form id="form">
             <label for="hero-name">Hero's name: </label>
-            <input type="text" id="hero-name" name="hero-name" required>
+            <input type="text" id="hero-name" name="hero-name">
 
             <br>
 
             <label for="ability-one">First ability: </label>
-            <input type="text" id="ability-one" name="ability-one" required>
+            <input type="text" id="ability-one" name="ability-one">
 
             <br>
 
             <label for="description-one">Description: </label>
-            <input type="text" id="description-one" name="description-one" required>
+            <input type="text" id="description-one" name="description-one">
 
             <br>
 
             <label for="ability-two">Second ability: </label>
-            <input type="text" id="ability-two" name="ability-two" required>
+            <input type="text" id="ability-two" name="ability-two">
 
             <br>
 
             <label for="description-two">Description: </label>
-            <input type="text" id="description-two" name="description-two" required>
+            <input type="text" id="description-two" name="description-two">
 
             <br>
 
-            <label for="color"></label>
-            <input type="text" id="color" name="color">
+            <label for="hero-color">Hero color: </label>
+            <input type="text" id="hero-color" name="hero-color">
 
+            <br>
+        
+            <label for="background-color">Background(darker than hero is good): </label>
+            <input type="text" id="background-color" name="background-color">
+
+            <br>
+            
             <input type="button" value="Submit" onclick="createHero()">
         </form>
 
-        <div id="new-hero">
-            <h1 id="new-hero-name">Hero</h1>
-            <h2 id="new-ability-one">Ability: </h2>
-            <p id="new-description-one">description</p>
-            <h2 id="new-ability-two">Ability: </h2>
-            <p id="new-description-two">description</p>
+        <div id="new-hero" style="display: none;">
+
+            <div id="new-hero-circle">
+                <h1 id="new-hero-name">Hero</h1>
+                <div id="circle"></div>
+            </div>
+            
+            <div id="new-abilities">
+                <h2 id="new-ability-one">Ability: </h2>
+                <p id="new-description-one">description</p>
+                <h2 id="new-ability-two">Ability: </h2>
+                <p id="new-description-two">description</p>
+            </div>
+        
         </div>
     </body>
 </html>
