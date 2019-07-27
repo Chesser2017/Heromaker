@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Heromaker</title>
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <form id="form">
+            <label for="hero-name">Hero's name: </label>
+            <input type="text" id="hero-name" name="hero-name" required>
+
+            <br>
+
+            <label for="ability-one">First ability: </label>
+            <input type="text" id="ability-one" name="ability-one" required>
+
+            <br>
+
+            <label for="description-one">Description: </label>
+            <input type="text" id="description-one" name="description-one" required>
+
+            <br>
+
+            <label for="ability-two">Second ability: </label>
+            <input type="text" id="ability-two" name="ability-two" required>
+
+            <br>
+
+            <label for="description-two">Description: </label>
+            <input type="text" id="description-two" name="description-two" required>
+
+            <br>
+
+            <label for="color"></label>
+            <input type="text" id="color" name="color">
+
+            <input type="button" value="Submit" onclick="createHero()">
+        </form>
+
+        <div id="new-hero">
+            <h1 id="new-hero-name">Hero</h1>
+            <h2 id="new-ability-one">Ability: </h2>
+            <p id="new-description-one">description</p>
+            <h2 id="new-ability-two">Ability: </h2>
+            <p id="new-description-two">description</p>
+        </div>
+    </body>
+</html>
