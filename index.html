@@ -12,43 +12,43 @@
         <form>
             <label for="name">Hero's name: </label>
             <br>
-            <input type="text" id="name" placeholder="Hero">
+            <input type="text" id="name" placeholder="(max 15 characters)" maxlength="15">
 
             <br>
 
             <label for="ability-one">First ability: </label>
             <br>
-            <input type="text" id="ability-one" placeholder="Ability">
+            <input type="text" id="ability-one" placeholder="(max 25 characters)" maxlength="25">
 
             <br>
 
             <label for="description-one">Description: </label>
             <br>
-            <input type="text" id="description-one" placeholder="description">
+            <textarea id="description-one" cols="40" rows="7" placeholder="(max 250 characters)" maxlength="250"></textarea>
 
             <br>
 
             <label for="ability-two">Second ability: </label>
             <br>
-            <input type="text" id="ability-two" placeholder="Ability">
+            <input type="text" id="ability-two" placeholder="(max 25 characters)" maxlength="25">
 
             <br>
 
             <label for="description-two">Description: </label>
             <br>
-            <input type="text" id="description-two" placeholder="description">
+            <textarea id="description-two" cols="40" rows="7" placeholder="(max 250 characters)" maxlength="250"></textarea>
 
             <br>
 
             <label for="color">Hero color: </label>
             <br>
-            <input type="text" id="color" placeholder="lightgray">
+            <input type="text" id="color" placeholder="any valid color will work">
 
             <br>
         
-            <label for="background-color">Background(darker than hero is good): </label>
+            <label for="background-color">Background: </label>
             <br>
-            <input type="text" id="background-color" placeholder="gray">
+            <input type="text" id="background-color" placeholder="darker than the hero is good">
 
             <br>
             
@@ -64,12 +64,12 @@
             
             <div id="ability-box">
 
-                <div class="ability">
+                <div class="first ability">
                     <h2 id="current-ability-one">Ability</h2>
                     <p id="current-description-one">description</p>
                 </div>
                 
-                <div class="ability">
+                <div class="second ability">
                     <h2 id="current-ability-two">Ability</h2> 
                     <p id="current-description-two">description</p>
                 </div>

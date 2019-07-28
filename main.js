@@ -18,6 +18,7 @@ function createHero(){
     let background = document.getElementById('background-color').value;
 
     //Elements to change
+    let currentHero = document.getElementById('current-hero');
     let heroBox = document.getElementById('hero-box');
     let abilityBox = document.getElementById('ability-box');
     let abilities = document.getElementsByClassName('ability');
@@ -48,6 +49,7 @@ function createHero(){
 
     if(background){
         abilityBox.style.background = background;
+        currentHero.style.background = background;
     }
 
     setUpperBox(heroBox, background, color);
