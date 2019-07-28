@@ -3,62 +3,77 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
         <title>Heromaker</title>
         <script src="main.js"></script>
     </head>
 
     <body>
-        <form id="form">
-            <label for="hero-name">Hero's name: </label>
-            <input type="text" id="hero-name" name="hero-name">
+        <form>
+            <label for="name">Hero's name: </label>
+            <br>
+            <input type="text" id="name" placeholder="Hero">
 
             <br>
 
             <label for="ability-one">First ability: </label>
-            <input type="text" id="ability-one" name="ability-one">
+            <br>
+            <input type="text" id="ability-one" placeholder="Ability">
 
             <br>
 
             <label for="description-one">Description: </label>
-            <input type="text" id="description-one" name="description-one">
+            <br>
+            <input type="text" id="description-one" placeholder="description">
 
             <br>
 
             <label for="ability-two">Second ability: </label>
-            <input type="text" id="ability-two" name="ability-two">
+            <br>
+            <input type="text" id="ability-two" placeholder="Ability">
 
             <br>
 
             <label for="description-two">Description: </label>
-            <input type="text" id="description-two" name="description-two">
+            <br>
+            <input type="text" id="description-two" placeholder="description">
 
             <br>
 
-            <label for="hero-color">Hero color: </label>
-            <input type="text" id="hero-color" name="hero-color">
+            <label for="color">Hero color: </label>
+            <br>
+            <input type="text" id="color" placeholder="lightgray">
 
             <br>
         
             <label for="background-color">Background(darker than hero is good): </label>
-            <input type="text" id="background-color" name="background-color">
+            <br>
+            <input type="text" id="background-color" placeholder="gray">
 
             <br>
             
             <input type="button" value="Submit" onclick="createHero()">
         </form>
 
-        <div id="new-hero" style="display: none;">
+        <div id="current-hero">
 
-            <div id="new-hero-circle">
-                <h1 id="new-hero-name">Hero</h1>
+            <div id="hero-box">
+                <h1 id="current-name">Hero</h1>
                 <div id="circle"></div>
             </div>
             
-            <div id="new-abilities">
-                <h2 id="new-ability-one">Ability: </h2>
-                <p id="new-description-one">description</p>
-                <h2 id="new-ability-two">Ability: </h2>
-                <p id="new-description-two">description</p>
+            <div id="ability-box">
+
+                <div class="ability">
+                    <h2 id="current-ability-one">Ability</h2>
+                    <p id="current-description-one">description</p>
+                </div>
+                
+                <div class="ability">
+                    <h2 id="current-ability-two">Ability</h2> 
+                    <p id="current-description-two">description</p>
+                </div>
+
             </div>
         
         </div>
